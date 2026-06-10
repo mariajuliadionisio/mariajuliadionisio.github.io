@@ -45,3 +45,58 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+const formularioContato = document.getElementById('meu-formulario');
+const statusMensagem = document.getElementById('form-status'); 
+
+if (formularioContato && statusMensagem) {
+    formularioContato.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+        
+        const botaoSubmeter = formularioContato.querySelector('.btn-submit-form');
+        const textoOriginalBotao = botaoSubmeter.textContent;
+        
+        botaoSubmeter.textContent = 'Enviando...';
+        botaoSubmeter.disabled = true;
+
+        statusMensagem.textContent = '';
+        statusMensagem.className = 'form-status-message'; 
+
+        const formData = new FormData(formularioContato);
+        
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            botaoSubmeter.textContent = textoOriginalBotao;
+            botaoSubmeter.disabled = false;
+
+            if (data.success) {
+                statusMensagem.textContent = '✅ Mensagem enviada com sucesso! Obrigada pelo contato.';
+                statusMensagem.style.color = '#28a745'; 
+                statusMensagem.style.marginTop = '10px';
+                statusMensagem.style.fontWeight = '600';
+                
+                formularioContato.reset(); 
+            } else {
+                statusMensagem.textContent = '❌ Ops! Ocorreu um erro ao tentar enviar. Tente novamente.';
+                statusMensagem.style.color = '#dc3545'; 
+                statusMensagem.style.marginTop = '10px';
+                statusMensagem.style.fontWeight = '600';
+            }
+        })
+        .catch(error => {
+            botaoSubmeter.textContent = textoOriginalBotao;
+            botaoSubmeter.disabled = false;
+            
+            statusMensagem.textContent = '❌ Erro de conexão. Verifique sua internet.';
+            statusMensagem.style.color = '#dc3545';
+            statusMensagem.style.marginTop = '10px';
+            statusMensagem.style.fontWeight = '600';
+            console.error('Erro no envio:', error);
+        });
+    });
+}
