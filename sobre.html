@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        if (localStorage.getItem('tema') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim | Maria Júlia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo">Maria Júlia O. Dionísio</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html" class="active">Sobre Mim</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="inspiracoes.html">Contato</a></li>
+                </ul>
+                <button id="btn-tema" aria-label="Alternar tema">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <section class="page-title-section">
+            <h1>Sobre Mim</h1>
+        </section>
+
+        <section class="interests-section">
+            <h2>Interesses Profissionais</h2>
+            <div class="grid-interests">
+                <div class="interest-card">
+                    <h3>Cibersegurança</h3>
+                    <p>Estudo de vulnerabilidades, protection de sistemas e práticas para garantir a segurança da informação e de redes.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Lógica e Sistemas</h3>
+                    <p>Desenvolvimento do raciocínio lógico e compreensão da arquitetura e do funcionamento estrutural de sistemas de computação.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Automação e Back-End</h3>
+                    <p>Criação de scripts, automação de tarefas cotidianas e estruturação da lógica de servidores por trás das aplicações.</p>
+                </div>
+            </div>
+
+            <div class="languages-area">
+                <h3>Linguagens que estou aprendendo:</h3>
+                <div class="badges-container">
+                    <img src="https://img.shields.io/badge/Python-ff85da?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/HTML-ff85da?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+                    <img src="https://img.shields.io/badge/CSS-ff85da?style=for-the-badge&logo=css&logoColor=white" alt="CSS">
+                    <img src="https://img.shields.io/badge/JavaScript-ff85da?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
+                    <img src="https://img.shields.io/badge/C++-ff85da?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                </div>
+            </div>
+        </section>
+
+        <section class="certificates-section">
+            <h2>Certificados</h2>
+            <div class="certificates-container">
+                <div class="certificate-card-item">
+                    <div class="certificate-info">
+                        <h3>Python LVL1 Course</h3>
+                        <p class="certificate-issuer">Kodland • 2025 - 2026</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1z_MsQihWf6bysixoCpffGUwhlJtjdUtn/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view-certificate">
+                        Visualizar ↗
+                    </a>
+                </div>
+            </div>
+            <div class="certificates-container">
+                <div class="certificate-card-item">
+                    <div class="certificate-info">
+                        <h3>Fundamentos de Hardware do Computador</h3>
+                        <p class="certificate-issuer">Cisco Networking Academy • 2026</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1EbUhBZGBvyGg0qUYEojS4xcCYmfsWQVs/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view-certificate">
+                        Visualizar ↗
+                    </a>
+                </div>
+            </div>
+            <div class="certificates-container">
+                <div class="certificate-card-item">
+                    <div class="certificate-info">
+                        <h3>Fundamentos do Python 1</h3>
+                        <p class="certificate-issuer">Cisco Networking Academy • 2026</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1CWzSC3x9b-KXigH_ckTlij-XCElHQFoA/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view-certificate">
+                        Visualizar ↗
+                    </a>
+                </div>
+            </div>
+            <div class="certificates-container">
+                <div class="certificate-card-item">
+                    <div class="certificate-info">
+                        <h3>JavaScript Essentials 1</h3>
+                        <p class="certificate-issuer">Cisco Networking Academy • 2026</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1dsOEQLe2zkEuUiN_R5UGCktlDC719PVi/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view-certificate">
+                        Visualizar ↗
+                    </a>
+                </div>
+            </div>
+            
+            <div class="certificates-container">
+                <div class="certificate-card-item">
+                    <div class="certificate-info">
+                        <h3>Gestão ágil de projetos com Scrum e Kanban</h3>
+                        <p class="certificate-issuer">Departamento Nacional do Senac • 2026</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1h5KLbihUH298FQ-OZhtbMEruFTFn-VFd/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view-certificate">
+                        Visualizar ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 - Maria Júlia Oliveira Dionísio</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/maria-júlia-oliveira-dionísio-2335a13b8" target="_blank" rel="noopener">
+                    <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-ff85da?style=for-the-badge&logo=linkedin-white&logoColor=ff85da" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/mariajuliadionisio" target="_blank" rel="noopener">
+                    <img src="https://img.shields.io/badge/GitHub-ff85da?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                </a>
+                <a href="mailto:mariajuliadionisio@gmail.com">
+                    <img src="https://img.shields.io/badge/Gmail-ff85da?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
