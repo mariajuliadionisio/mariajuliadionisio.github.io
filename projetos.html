@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        if (localStorage.getItem('tema') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Maria Júlia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo">Maria Júlia O. Dionísio</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html" class="active">Projetos</a></li>
+                    <li><a href="inspiracoes.html">Contato</a></li>
+                </ul>
+                <button id="btn-tema" aria-label="Alternar tema">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="project-details">
+            <h2>Projeto 1</h2>
+            <article class="project-card-main">
+                <h3>MangueTown: De Recife ao Caos</h3>
+                <p class="project-tag">Tecnologias: Arduino / Lógica de Programação (C++)</p>
+                <hr> <p><strong>Descrição do Projeto:</strong></p>
+                <p>
+                    O jogo de tabuleiro Manguetown: De Recife ao Caos nasce como uma resposta afetiva e tecnológica à falta de inclusão no universo dos jogos de interpretação de papéis (RPG). Inspirado nas paisagens e na cultura icônica de Recife, o projeto foi inteiramente desenhado para acolher pessoas com <b>dislexia</b>, um público frequentemente afastado de tabuleiros tradicionais devido ao excesso de textos e regras ambíguas. Para romper essas barreiras cognitivas, a dinâmica utiliza recursos visuais acessíveis, como a codificação dupla por cores e formas, além de comandos de voz para simplificar a experiência dos participantes. 
+                </p>
+                <p style="margin-top: 1rem;">
+                    O grande coração do projeto está na sua fusão entre o físico e o digital por meio de um sistema automatizado com Arduino. Equipado com um painel de LEDs e um MP3 Player, o tabuleiro assume o papel de um "oráculo" vivo durante as partidas. Ao transformar mecânicas complexas em estímulos sensoriais dinâmicos, Manguetown não apenas resgata a cultura recifense, mas estabelece um novo e acessível padrão de jogabilidade onde o caos da cidade se transforma em pura diversão inclusiva.
+                </p>
+            </article>
+            <article class="project-card-main" style="margin-top: 2rem;">
+                <h3>Fairy Escape</h3>
+                <p class="project-tag">Tecnologias: Python / Pygame Zero / Lógica de Programação</p>
+                <hr>
+                <p><strong>Descrição do Projeto:</strong></p>
+                <p>
+                    Como projeto de conclusão e consolidação do curso de Python da Kodland, desenvolvi o jogo 'Fairy Escape' utilizando a biblioteca Pygame Zero, onde apliquei conceitos de matrizes, loops de eventos e lógica de colisão.
+                </p>
+                <p style="margin-top: 1rem;">
+                    No jogo, o participante controla uma fada que precisa desviar de diversos obstáculos que surgem na tela, como plantas venenosas e feitiços lançados pela bruxa, enquanto o sistema realiza a contagem e atualização da pontuação dinamicamente, oferecendo uma experiência de gameplay arcade clássica e fluida.
+                </p>
+            </article>
+            <article class="project-card-main" style="margin-top: 2rem;">
+                <h3>Arquétipo</h3>
+                <p class="project-tag">Tecnologias: HTML / CSS / JavaScript / Lógica de Programação</p>
+                <hr>
+                <p><strong>Descrição do Projeto:</strong></p>
+                <p>
+                    O Arquétipo é um sistema em linha de comando desenvolvido em Python para gestão de saúde e rotinas fitness. O software atua no gerenciamento completo de atividades físicas, permitindo cadastrar, editar e excluir treinos com parâmetros que mudam dinamicamente dependendo da modalidade escolhida pelo usuário. 
+                </p>
+                <p style="margin-top: 1rem;">
+                    O sistema conta com um módulo de Controle de Metas com cálculo de progresso percentual, avaliação de IMC com classificação de status e geração automatizada de relatórios. Todos os dados, estatísticas de evolução e sugestões personalizadas são gravados e persistidos localmente em um arquivo de texto.
+                </p>
+            </article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 - Maria Júlia Oliveira Dionísio</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/maria-júlia-oliveira-dionísio-2335a13b8" target="_blank" rel="noopener">
+                    <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-ff85da?style=for-the-badge&logo=linkedin-white&logoColor=ff85da" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/mariajuliadionisio" target="_blank" rel="noopener">
+                    <img src="https://img.shields.io/badge/GitHub-ff85da?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                </a>
+                <a href="mailto:mjulia.dionisio@gmail.com">
+                    <img src="https://img.shields.io/badge/Gmail-ff85da?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
